@@ -2,6 +2,7 @@
 layout: post
 title:  "Markdown Test"
 date:   2017-01-05 01:04:41 +0800
+tags: markdown test ts
 categories: markdown
 ---
 

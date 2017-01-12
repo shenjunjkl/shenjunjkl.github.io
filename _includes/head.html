@@ -1,0 +1,69 @@
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/hyde.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/cate.css">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">-->
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <script type="text/javascript">(function() {
+    var isIPhone = window.navigator.appVersion.match(/iphone/gi);
+    var devicePixelRatio = window.devicePixelRatio;
+    var dpr = 1;
+    if (isIPhone) {
+        if (devicePixelRatio >= 3) {
+            dpr = 3;
+        } else if (devicePixelRatio >= 2) {
+            dpr = 2;
+        }
+    }
+    var scale = 1/2;
+
+    var metaViewport = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', user-scalable=no, width=device-width" />';
+    //- document.write(metaViewport);
+
+    var docEl = document.documentElement;
+    var width = docEl.getBoundingClientRect().width;
+
+    if (width / dpr > 450) width = dpr * 450;
+    var rem = width / 6.4;
+    //- docEl.style.fontSize = rem + 'px';
+    })();</script>
+
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    var indexes = document.querySelectorAll('.index-list .index');
+    Array.prototype.forEach.call(indexes, function(index, i){
+        index.addEventListener('click', function (event) {
+            var url = this.querySelector('a').href;
+            window.location.href = url;
+            });
+        });
+    });</script>
+
+</head>
