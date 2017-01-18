@@ -78,18 +78,36 @@
 /* About section */
 .sidebar-about h1 {
   color: #fff;
-  margin-top: 0;
+  margin: 0 auto;
+  margin-top: 0.6rem;
   font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-size: 2.25rem;
+}
+
+/* Avatar section */
+.sidebar-pic {
+  display: block;
+  text-align: center;
+  margin-top: 4rem
+}
+
+.sidebar-pic img {
+  margin:0 auto;
+  -webkit-border-radius: 14rem;
+  border-radius: 14rem;
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid #fff;
+  background: #88acdb;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 .sidebar-nav-item {
   display: block;
-  line-height: 1.75;
+  line-height: 2.25;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
@@ -97,6 +115,12 @@ a.sidebar-nav-item:focus {
 }
 .sidebar-nav-item.active {
   font-weight: bold;
+}
+
+.sidebar-foot {
+  font-size: small;
+  position: absolute;
+  bottom: 1rem;
 }
 
 /* Sticky sidebar
@@ -109,8 +133,9 @@ a.sidebar-nav-item:focus {
   .sidebar-sticky {
     position: absolute;
     right:  1rem;
-    bottom: 1rem;
+    top: 1rem;
     left:   1rem;
+    text-align: center;
   }
 }
 

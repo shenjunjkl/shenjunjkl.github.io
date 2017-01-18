@@ -1,10 +1,10 @@
 ---
-layout: cate
-title: Index
+layout: page
+title: 所有文章
 ---
 <section class="index-list">
   <div>
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
     <article class="index index-with-tags">
       <header class="index-title">
         <a href="{{ post.url }}">{{ post.title }}</a>
@@ -26,20 +26,3 @@ title: Index
     {% endfor %}
   </div>
 </section>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">上一页</a>
-  {% else %}
-    <span class="pagination-item older">上一页</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">下一页</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">下一页</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">下一页</span>
-  {% endif %}
-</div>

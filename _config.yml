@@ -2,13 +2,13 @@
 
 title: shenjun
 email: your-email@domain.com
-description: ‘测试下中文的description有没有问题’
+description: ‘description’
 baseurl: /
 url: ""
 #twitter_username: jekyllrb
 github_username:  shenjunjkl
 
-paginate: 8
+paginate: 6
 #version: 2.1.0
 
 # Build settings
