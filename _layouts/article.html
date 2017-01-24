@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <script type="text/javascript">
+  function GetQueryString(name) {
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null)return  unescape(r[2]); return null;}
+    var tag = GetQueryString('tag');
+    </script>
+  {% include head.html %}
+  <body>
+    {% include sidebar.html %}
+    <div class="index-content index-container">
+      <h1 class="page-title" id="page-title-id">
+      </h1>
+      <script type="text/javascript">
+        document.getElementById("page-title-id").innerHTML = (tag == null ? "{{page.title}}" : "标签：" + tag);
+      </script>
+      {{ content }}
+    </div>
+  </body>
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    var articles = document.querySelectorAll('.article-list .article');
+    Array.prototype.forEach.call(articles, function(article, i){
+        article.addEventListener('click', function (event) {
+            var url = this.querySelector('a').href;
+            window.location.href = url;
+            });
+        });
+    });</script>
+</html>
