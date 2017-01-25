@@ -1,19 +1,21 @@
 
 
 title: shenjun
-email: your-email@domain.com
-description: ‘description’
+email: 805442858@qq.com
 baseurl: /
-url: ""
-#twitter_username: jekyllrb
 github_username:  shenjunjkl
+
+#rss
+name: shenjun's blog
+description: ‘description’
+url: "http://shenjunjkl.github.io"
 
 paginate: 6
 #version: 2.1.0
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 theme: minima
 
 # Permalinks

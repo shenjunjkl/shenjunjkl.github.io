@@ -291,3 +291,42 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+.social {
+    margin-top: 20px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.social a {
+    border-radius: 50%;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    * vertical-align: auto;
+    zoom: 1;
+    * display: inline;
+    margin: 0 8px 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    text-align: center;
+    color: #fff;
+    opacity: .9;
+    width: 40px;
+    height: 40px;
+    line-height: 26px
+}
+.social a:hover {
+    opacity: 1
+}
+.social a.icon {
+    background: #fff;
+    border: 2px solid #32D3C3;
+}
